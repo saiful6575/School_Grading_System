@@ -1,0 +1,17 @@
+coreapi
+shapely
+stripe>=2.56.0
+google-api-python-client
+raven
+coverage==4.4.2
+django-cors-headers
+celery[sqs]==4.4.1
+redis
+django-celery-results
+flower
+boto3
+django-storages
+django-celery-beat
+twilio==6.32.0
+django_extensions
+

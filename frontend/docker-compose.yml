@@ -1,0 +1,16 @@
+version: "3.8"
+
+services:
+  evergreen_customer:
+    container_name: result_mgm_app
+    restart: "no"
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - '.:/app'
+      - '/app/node_modules'
+    command: >
+      bash -c "npm i && vue-cli-service serve"
+    ports:
+      - "8080:8080"
